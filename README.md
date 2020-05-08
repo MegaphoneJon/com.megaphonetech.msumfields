@@ -1,15 +1,15 @@
 # com.megaphonetech.msumfields
 
-![Screenshot](/images/screenshot.png)
+![contributor.png screenshot](/images/contributor.png)
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+This extension makes additional fields available for use with the Summary Fields extension. Currently this is limited to "Financial Type of Last Contribution."
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
 
 * PHP v5.6+
-* CiviCRM (*FIXME: Version number*)
+* CiviCRM 5.12+
 
 ## Installation (Web UI)
 
@@ -22,7 +22,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl com.megaphonetech.msumfields@https://github.com/FIXME/com.megaphonetech.msumfields/archive/master.zip
+cv dl com.megaphonetech.msumfields@https://github.com/MegaphoneJon/com.megaphonetech.msumfields/archive/master.zip
 ```
 
 ## Installation (CLI, Git)
@@ -31,14 +31,20 @@ Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) 
 install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
-git clone https://github.com/FIXME/com.megaphonetech.msumfields.git
+git clone https://github.com/MegaphoneJon/com.megaphonetech.msumfields.git
 cv en msumfields
 ```
 
 ## Usage
 
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
+Upon installation, go to **Administer menu » Customize Data and Screens » Summary Fields** where you will find a new checkbox for **Financial Type of Last Contribution**. Make sure the checkbox is enabled.
+
+![msumfields.png screenshot](/images/msumfields.png)
+
+When you view a contact and click on the **Summary Fields** tab, you will find a new field, *Financial Type of Last Contribution*
+
+![contributor.png screenshot](/images/contributor.png)
 
 ## Known Issues
 
-(* FIXME *)
+None
