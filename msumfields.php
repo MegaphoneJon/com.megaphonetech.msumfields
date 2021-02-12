@@ -50,7 +50,7 @@ function msumfields_civicrm_sumfields_definitions(&$custom) {
   ];
 
 
-  $custom['fields']['largest_contribution_amount'] = [
+  $custom['fields']['largest_contribution_financial_type'] = [
     // Choose which group you want this field to appear with.
     'optgroup' => 'fundraising', // could just add this to the existing "fundraising" optgroup
     'label' => 'Financial Type of Largest Contribution',
