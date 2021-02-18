@@ -2,7 +2,9 @@
 
 ![contributor.png screenshot](/images/contributor.png)
 
-This extension makes additional fields available for use with the Summary Fields extension. Currently this is limited to "Financial Type of Last Contribution."
+This extension makes additional fields available for use with the Summary Fields extension. Currently this includes
+•Financial Type of Last Contribution
+•Financial Type of Largest Contribution
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
@@ -37,11 +39,11 @@ cv en msumfields
 
 ## Usage
 
-Upon installation, go to **Administer menu » Customize Data and Screens » Summary Fields** where you will find a new checkbox for **Financial Type of Last Contribution**. Make sure the checkbox is enabled.
+After installation, navigate to **Administer menu » Customize Data and Screens » Summary Fields** where you will find a new checkbox for the newly-created summary field (for instance **Financial Type of Last Contribution** as shown in the image below). Make sure the checkbox is checked.
 
 ![msumfields.png screenshot](/images/msumfields.png)
 
-When you view a contact and click on the **Summary Fields** tab, you will find a new field, *Financial Type of Last Contribution*
+When you navigate to a contact's summary page and click on the **Summary Fields** tab, the new field will be there (below is a picture of *Financial Type of Last Contribution*).
 
 ![contributor.png screenshot](/images/contributor.png)
 

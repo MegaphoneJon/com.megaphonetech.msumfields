@@ -29,31 +29,11 @@ function msumfields_civicrm_sumfields_definitions(&$custom) {
       (%financial_type_ids) ORDER BY t1.receive_date DESC LIMIT 1)',
   ];
 
-  $custom['fields']['largest_contribution_amount'] = [
-    // Choose which group you want this field to appear with.
-    'optgroup' => 'fundraising', // could just add this to the existing "fundraising" optgroup
-    'label' => 'Amount of Largest Contribution',
-    'data_type' => 'String',
-    'html_type' => 'Text',
-    'weight' => '1',
-    'text_length' => '64',
-    // A change in the "trigger_table" should cause the field to be re-calculated.
-    'trigger_table' => 'civicrm_contribution',
-    // A parentheses enclosed SQL statement with a function to ensure a single
-    // value is returned. The value should be restricted to a single
-    // contact_id using the NEW.contact_id field
-    'trigger_sql' => '(SELECT total_amount FROM civicrm_contribution AS t1     
-      WHERE t1.contact_id = NEW.contact_id
-      AND t1.contribution_status_id = 1  
-      AND t1.financial_type_id IN (%financial_type_ids) 
-      ORDER BY t1. total_amount DESC LIMIT 1)',
-  ];
-
 
   $custom['fields']['largest_contribution_financial_type'] = [
     // Choose which group you want this field to appear with.
     'optgroup' => 'fundraising', // could just add this to the existing "fundraising" optgroup
-    'label' => 'Financial Type of Largest Contribution',
+    'label' => 'Largest Contribution Financial Type',
     'data_type' => 'String',
     'html_type' => 'Text',
     'weight' => '1',
