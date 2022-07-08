@@ -55,10 +55,6 @@ function msumfields_civicrm_sumfields_definitions(&$custom) {
 
 }
 
-
-
-
-
 /**
  * Implements hook_civicrm_config().
  *
@@ -66,15 +62,6 @@ function msumfields_civicrm_sumfields_definitions(&$custom) {
  */
 function msumfields_civicrm_config(&$config) {
   _msumfields_civix_civicrm_config($config);
-}
-
-/**
- * Implements hook_civicrm_xmlMenu().
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_xmlMenu
- */
-function msumfields_civicrm_xmlMenu(&$files) {
-  _msumfields_civix_civicrm_xmlMenu($files);
 }
 
 /**
@@ -132,54 +119,6 @@ function msumfields_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
 }
 
 /**
- * Implements hook_civicrm_managed().
- *
- * Generate a list of entities to create/deactivate/delete when this module
- * is installed, disabled, uninstalled.
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_managed
- */
-function msumfields_civicrm_managed(&$entities) {
-  _msumfields_civix_civicrm_managed($entities);
-}
-
-/**
- * Implements hook_civicrm_caseTypes().
- *
- * Generate a list of case-types.
- *
- * Note: This hook only runs in CiviCRM 4.4+.
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_caseTypes
- */
-function msumfields_civicrm_caseTypes(&$caseTypes) {
-  _msumfields_civix_civicrm_caseTypes($caseTypes);
-}
-
-/**
- * Implements hook_civicrm_angularModules().
- *
- * Generate a list of Angular modules.
- *
- * Note: This hook only runs in CiviCRM 4.5+. It may
- * use features only available in v4.6+.
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_angularModules
- */
-function msumfields_civicrm_angularModules(&$angularModules) {
-  _msumfields_civix_civicrm_angularModules($angularModules);
-}
-
-/**
- * Implements hook_civicrm_alterSettingsFolders().
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_alterSettingsFolders
- */
-function msumfields_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
-  _msumfields_civix_civicrm_alterSettingsFolders($metaDataFolders);
-}
-
-/**
  * Implements hook_civicrm_entityTypes().
  *
  * Declare entity types provided by this module.
@@ -197,8 +136,8 @@ function msumfields_civicrm_entityTypes(&$entityTypes) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_preProcess
  *
-function msumfields_civicrm_preProcess($formName, &$form) {
-} // */
+
+ // */
 
 /**
  * Implements hook_civicrm_navigationMenu().
